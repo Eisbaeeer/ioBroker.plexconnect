@@ -1,8 +1,8 @@
 {
     "common": {
         "name":                     "plexconnect",
-        "title":                    "Plex Webhook",
-        "desc":                     "getting webhooks from Plex",
+        "title":                    "Plex Connect",
+        "desc":                     "Plex connector",
         "version":                  "0.0.1",
         "mode":                     "daemon",
         "platform":                 "Javascript/Node.js",
