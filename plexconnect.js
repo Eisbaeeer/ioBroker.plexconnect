@@ -26,7 +26,7 @@ var upload = multer({ dest: '/tmp/' });
 app.post('/', upload.single('thumb'), function (req, res, next) {
     var payload = JSON.parse(req.body.payload);
     adapter.log.info('getting payload');
-    adapter.log.info(payload);
+    adapter.log.info(payload.Server.title);
     
 // MUSIK 
 //  if ( payload.event == "media.play" && payload.Metadata.type == "track") {

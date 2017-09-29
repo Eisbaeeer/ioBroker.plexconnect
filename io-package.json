@@ -25,102 +25,324 @@
     },
     "objects": [ 
     ],
-    "instanceObjects": [
-            {
-            "_id": "titel",
-            "type": "state",
+        "instanceObjects": [
+        {
+            "_id":  "event",
+            "type": "channel",
             "common": {
-                "name":  "Plex - Titel",
-                "type":  "state",
-                "role":  "state",
-                "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "role": "event",
+                "name": ""
+            },
+            "native": {}
         },
         {
-            "_id": "parentTitel",
+            "_id":  "event.Name",
             "type": "state",
             "common": {
-                "name":  "Plex - parenttitel",
-                "type":  "state",
-                "role":  "state",
+                "name":  "Event",
+                "desc":  "play, pause, resume, stop, scropple, rate",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "write": false
+            },
+            "native": {}
+        },
+                
+        {
+            "_id":  "account",
+            "type": "channel",
+            "common": {
+                "role": "account",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "account.id",
+            "type": "state",
+            "common": {
+                "name":  "id",
+                "desc":  "user-id",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
         },
          {
-            "_id": "who",
+            "_id":  "account.thumb",
             "type": "state",
             "common": {
-                "name":  "Plex - who",
-                "type":  "state",
-                "role":  "state",
+                "name":  "thumb",
+                "desc":  "user thumb",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "write": false
+            },
+            "native": {}
+        },
+         {
+            "_id":  "account.title",
+            "type": "state",
+            "common": {
+                "name":  "title",
+                "desc":  "user-title",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        
+        {
+            "_id":  "server",
+            "type": "channel",
+            "common": {
+                "role": "server",
+                "name": ""
+            },
+            "native": {}
         },
         {
-            "_id": "logo",
+            "_id":  "server.title",
             "type": "state",
             "common": {
-                "name":  "Plex - logo",
-                "type":  "state",
-                "role":  "state",
+                "name":  "title",
+                "desc":  "server-title",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "write": false
+            },
+            "native": {}
         },
         {
-            "_id": "parentlogo",
+            "_id":  "server.uuid",
             "type": "state",
             "common": {
-                "name":  "Plex - parentlogo",
-                "type":  "state",
-                "role":  "state",
+                "name":  "uuid",
+                "desc":  "server-uuid",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "write": false
+            },
+            "native": {}
+        },
+     
+        {
+            "_id":  "player",
+            "type": "channel",
+            "common": {
+                "role": "player",
+                "name": ""
+            },
+            "native": {}
         },
         {
-            "_id": "rating",
+            "_id":  "player.local",
             "type": "state",
             "common": {
-                "name":  "Plex - rating",
-                "type":  "state",
-                "role":  "state",
+                "name":  "local",
+                "desc":  "player-local",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "write": false
+            },
+            "native": {}
         },
         {
-            "_id": "media",
+            "_id":  "player.publicAddress",
             "type": "state",
             "common": {
-                "name":  "Plex - musik video home",
-                "type":  "state",
-                "role":  "state",
+                "name":  "publicAddress",
+                "desc":  "player-publicAddress",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
+                "write": false
+            },
+            "native": {}
         },
         {
-            "_id": "description",
+            "_id":  "player.title",
             "type": "state",
             "common": {
-                "name":  "Plex - Beschreibung",
-                "type":  "state",
-                "role":  "state",
+                "name":  "title",
+                "desc":  "player-title",
+                "type":  "string",
                 "read":  true,
-                "write": true,
-                "def":   null
-            }
-         } 
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "player.uuid",
+            "type": "state",
+            "common": {
+                "name":  "uuid",
+                "desc":  "player-uuid",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        
+       {
+            "_id":  "metadata",
+            "type": "channel",
+            "common": {
+                "role": "metadata",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.librarySectionType",
+            "type": "state",
+            "common": {
+                "name":  "librarySectionType",
+                "desc":  "metadata-librarySectionType",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        }, 
+        {
+            "_id":  "metadata.type",
+            "type": "state",
+            "common": {
+                "name":  "type",
+                "desc":  "metadata-type",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        }, 
+        {
+            "_id":  "metadata.title",
+            "type": "state",
+            "common": {
+                "name":  "title",
+                "desc":  "metadata-title",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        
+        
+        
+        
+        {
+            "_id":  "metadata.grandparentTitle",
+            "type": "state",
+            "common": {
+                "name":  "grandparentTitle",
+                "desc":  "metadata-grandparentTitle",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.parentTitle",
+            "type": "state",
+            "common": {
+                "name":  "parentTitle",
+                "desc":  "metadata-parentTitle",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.thumb",
+            "type": "state",
+            "common": {
+                "name":  "thumb",
+                "desc":  "metadata-thumb",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.art",
+            "type": "state",
+            "common": {
+                "name":  "art",
+                "desc":  "metadata-art",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.parentThumb",
+            "type": "state",
+            "common": {
+                "name":  "parentThumb",
+                "desc":  "metadata-parentThumb",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.grandparentThumb",
+            "type": "state",
+            "common": {
+                "name":  "grandparentThumb",
+                "desc":  "metadata-grandparentThumb",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.grandparentArt",
+            "type": "state",
+            "common": {
+                "name":  "grandparentArt",
+                "desc":  "metadata-grandparentArt",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.addedAt",
+            "type": "state",
+            "common": {
+                "name":  "addedAt",
+                "desc":  "metadata-addedAt",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "metadata.updatedAt",
+            "type": "state",
+            "common": {
+                "name":  "updatedAt",
+                "desc":  "metadata-updatedAt",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+     }
     ]
 }
+    
