@@ -1,0 +1,126 @@
+{
+    "common": {
+        "name":                     "plexconnect",
+        "title":                    "Plex Webhook",
+        "desc":                     "getting webhooks from Plex",
+        "version":                  "0.0.1",
+        "mode":                     "daemon",
+        "platform":                 "Javascript/Node.js",
+        "loglevel":                 "info",
+        "keywords":                 ["plex media server", "plex", "addon"],
+        "main":                     "plexconnect.js",
+        "authors": [
+            "Lars Weimar <Eisbaeeer@gmail.com>",
+            "mdsv"
+        ],
+        "license":                  "MIT",
+        "readme":                   "https://github.com/eisbaeeer/iobroker.plexconnect/blob/master/README.md",
+        "icon":                     "plex-logo.png",
+        "type":                     "hardware",
+        "extIcon":                  "https://raw.githubusercontent.com/eisbaeeer/iobroker.plexconnect/master/admin/plex-logo.png"
+    },
+    "native": {
+        "ipaddress": "127.0.0.1",
+        "port":  "10000"
+    },
+    "objects": [ 
+    ],
+    "instanceObjects": [
+            {
+            "_id": "titel",
+            "type": "state",
+            "common": {
+                "name":  "Plex - Titel",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+        {
+            "_id": "parentTitel",
+            "type": "state",
+            "common": {
+                "name":  "Plex - parenttitel",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+         {
+            "_id": "who",
+            "type": "state",
+            "common": {
+                "name":  "Plex - who",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+        {
+            "_id": "logo",
+            "type": "state",
+            "common": {
+                "name":  "Plex - logo",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+        {
+            "_id": "parentlogo",
+            "type": "state",
+            "common": {
+                "name":  "Plex - parentlogo",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+        {
+            "_id": "rating",
+            "type": "state",
+            "common": {
+                "name":  "Plex - rating",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+        {
+            "_id": "media",
+            "type": "state",
+            "common": {
+                "name":  "Plex - musik video home",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+        },
+        {
+            "_id": "description",
+            "type": "state",
+            "common": {
+                "name":  "Plex - Beschreibung",
+                "type":  "state",
+                "role":  "state",
+                "read":  true,
+                "write": true,
+                "def":   null
+            }
+         } 
+    ]
+}

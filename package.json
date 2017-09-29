@@ -1,0 +1,46 @@
+{
+  "name": "iobroker.plexconnect",
+  "version": "0.0.1",
+  "description": "Webhook for Plex Media Server",
+  "author": "Lars Weimar <eisbaeeer@gmail.com>",
+  "contributors": [
+    "Lars Weimar <eisbaeeer@gmail.com>"
+  ],
+  "homepage": "https://github.com/Eisbaeeer/ioBroker.plexconnect",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "plex webhook",
+    "plex",
+    "web",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eisbaeeer/ioBroker.plexconnect"
+  },
+  "dependencies": {
+	"express": "https://github.com/expressjs/express/tarball/master/",
+  "multer": "https://github.com/expressjs/multer/tarball/master/"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-replace": "~0.7.6",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jscs": "~0.6.1",
+    "grunt-http": "~1.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.8.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-exec": "~0.4.5",
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Eisbaeeer/ioBroker.plexconnect/issues"
+  },
+  "main": "piface.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha"
+  }
+}
