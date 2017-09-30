@@ -1,6 +1,6 @@
 {
   "name": "iobroker.plexconnect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webhook for Plex Media Server",
   "author": "Lars Weimar <eisbaeeer@gmail.com>",
   "contributors": [
