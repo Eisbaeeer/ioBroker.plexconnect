@@ -3,7 +3,7 @@
         "name":                     "plexconnect",
         "title":                    "Plex Connect",
         "desc":                     "Plex connector",
-        "version":                  "0.0.1",
+        "version":                  "0.0.2",
         "mode":                     "daemon",
         "platform":                 "Javascript/Node.js",
         "loglevel":                 "info",
