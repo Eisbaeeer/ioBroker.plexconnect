@@ -2,6 +2,7 @@
 # ioBroker.plexconnect
 
 This adapter allows in first step to get Webhooks from Plex Media Server.
+More functionality will follow
 
 ### ! Attention !
 
@@ -11,7 +12,11 @@ For some functionality you need PlexPass.
 
 ## ChangeLog
 
-### 0.0.1.(2017-09-29)
+### 0.0.2 (2017-09-30)
+* (Eisbaeeer) 
+* testing version
+
+### 0.0.1 (2017-09-29)
 * (Eisbaeeer) 
 * initial version
 

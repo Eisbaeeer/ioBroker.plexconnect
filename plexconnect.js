@@ -30,10 +30,29 @@ app.post('/', upload.single('thumb'), function (req, res, next) {
 // Event
     adapter.setState (adapter.namespace + '.' + 'event.Name', {val: payload.event, ack: true});
 
-// MUSIK 
+// Metadata 
+    adapter.setState (adapter.namespace + '.' + 'metadata.addedAt', {val: payload.Metadata.addedAt, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.art', {val: payload.Metadata.art, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.grandparentArt', {val: payload.Metadata.grandparentArt, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.grandparentThumb', {val: payload.Metadata.grandparentThumb, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.grandparentTitle', {val: payload.Metadata.grandparentTitle, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.librarySectionType', {val: payload.Metadata.librarySectionType, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.parentThumb', {val: payload.Metadata.parentThumb, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.parentTitle', {val: payload.Metadata.parentTitle, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.thumb', {val: payload.Metadata.thumb, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.title', {val: payload.Metadata.title, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.type', {val: payload.Metadata.type, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.updatedAt', {val: payload.Metadata.updatedAt, ack: true});
+
+// Player
+    adapter.setState (adapter.namespace + '.' + 'player.local', {val: payload.Player.local, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'player.publicAddress', {val: payload.Player.publicAddress, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'player.title', {val: payload.Player.title, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'player.uuid', {val: payload.Player.uuid, ack: true});    
+
+// Server
+    adapter.setState (adapter.namespace + '.' + 'server.title', {val: payload.Server.title, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'server.uuid', {val: payload.Server.uuid, ack: true});
 
 });
 
