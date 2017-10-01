@@ -19,7 +19,8 @@
     "url": "https://github.com/Eisbaeeer/ioBroker.plexconnect"
   },
   "dependencies": {
-	"express": "https://github.com/expressjs/express/tarball/master/"
+	"express": "https://github.com/expressjs/express/tarball/master/",
+  "multer": "https://github.com/expressjs/multer/tarball/master/"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
