@@ -20,8 +20,7 @@
   },
   "dependencies": {
 	"express": "https://github.com/expressjs/express/tarball/master/",
-  "multer": "https://github.com/expressjs/multer/tarball/master/",
-  "plex-control": "https://github.com/phillipj/node-plex-control/tarball/master"
+  "multer": "https://github.com/expressjs/multer/tarball/master/"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
