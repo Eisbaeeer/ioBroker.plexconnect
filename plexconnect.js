@@ -33,14 +33,14 @@ app.post('/', upload.single('thumb'), function (req, res, next) {
 
 // Metadata 
     adapter.setState (adapter.namespace + '.' + 'metadata.addedAt', {val: payload.Metadata.addedAt, ack: true});
-    adapter.setState (adapter.namespace + '.' + 'metadata.art', {val: 'http://' + adapter.config.host + adapter.config.pmsport + payload.Metadata.art, ack: true});
-    adapter.setState (adapter.namespace + '.' + 'metadata.grandparentArt', {val: 'http://' + adapter.config.host + adapter.config.pmsport + payload.Metadata.grandparentArt, ack: true});
-    adapter.setState (adapter.namespace + '.' + 'metadata.grandparentThumb', {val: 'http://' + adapter.config.host + adapter.config.pmsport + payload.Metadata.grandparentThumb, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.art', {val: 'http://' + adapter.config.host + ":" + adapter.config.pmsport + payload.Metadata.art, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.grandparentArt', {val: 'http://' + adapter.config.host + ":"  + adapter.config.pmsport + payload.Metadata.grandparentArt, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.grandparentThumb', {val: 'http://' + adapter.config.host + ":"  + adapter.config.pmsport + payload.Metadata.grandparentThumb, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.grandparentTitle', {val: payload.Metadata.grandparentTitle, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.librarySectionType', {val: payload.Metadata.librarySectionType, ack: true});
-    adapter.setState (adapter.namespace + '.' + 'metadata.parentThumb', {val: 'http://' + adapter.config.host + adapter.config.pmsport + payload.Metadata.parentThumb, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.parentThumb', {val: 'http://' + adapter.config.host + ":"  + adapter.config.pmsport + payload.Metadata.parentThumb, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.parentTitle', {val: payload.Metadata.parentTitle, ack: true});
-    adapter.setState (adapter.namespace + '.' + 'metadata.thumb', {val: 'http://' + adapter.config.host + adapter.config.pmsport + payload.Metadata.thumb, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'metadata.thumb', {val: 'http://' + adapter.config.host + ":"  + adapter.config.pmsport + payload.Metadata.thumb, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.title', {val: payload.Metadata.title, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.type', {val: payload.Metadata.type, ack: true});
     adapter.setState (adapter.namespace + '.' + 'metadata.updatedAt', {val: payload.Metadata.updatedAt, ack: true});
