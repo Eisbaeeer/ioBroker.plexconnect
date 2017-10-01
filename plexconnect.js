@@ -15,7 +15,9 @@ var express = require('express'),
     request = require('request'),
     multer  = require('multer');
 var app = express();
+var PlexControl = require("plex-control").PlexControl;
 var upload = multer({ dest: '/tmp/' });
+var control = '';
 
 app.post('/', upload.single('thumb'), function (req, res, next) {
     var payload = JSON.parse(req.body.payload);
@@ -63,6 +65,10 @@ adapter.on('ready', function () {
     var server = app.listen(adapter.config.port, function () {
     var port = server.address().port;
     adapter.log.info('Server listening on port:' + port);
+    control = new PlexControl("adapter.config.host", "adapter.config.player");
+    adapter.log.info('PMS:' + adapter.config.host);
+    adapter.log.info('PMC:' + adapter.config.player);
+    
 });
     main();
 });
@@ -78,7 +84,24 @@ adapter.on('stateChange', function (id, state) {
     // you can use the ack flag to detect if state is command(false) or status(true)
     if (!state.ack) {
      //   adapter.log.info('ack is not set!');
-                
+    if (id == adapter.namespace + '.' + 'control.navigation.moveUp' && state.val == "true" ) {
+                    control.navigation.moveUp();
+                    adapter.setState (adapter.namespace + '.' + 'control.navigation.moveUp', {val: true, ack: true});
+                    }
+    if (id == adapter.namespace + '.' + 'control.navigation.moveDown' && state.val == "true" ) {
+                    control.navigation.moveDown();
+                    adapter.setState (adapter.namespace + '.' + 'control.navigation.moveDown', {val: true, ack: true});
+                    }
+
+    
+    if (id == adapter.namespace + '.' + 'control.playback.play' && state.val == "true" ) {
+                    control.playback.play();
+                    adapter.setState (adapter.namespace + '.' + 'control.playback.play', {val: true, ack: true});
+                    }
+    if (id == adapter.namespace + '.' + 'control.playback.pause' && state.val == "true" ) {
+                    control.playback.pause();
+                    adapter.setState (adapter.namespace + '.' + 'control.playback.pause', {val: true, ack: true});
+                    }                                                                        
     // here we go and set the outputs if state of object is changed with no ack
    }
 });
