@@ -1,7 +1,7 @@
 {
   "name": "iobroker.plexconnect",
   "version": "0.0.2",
-  "description": "Webhook for Plex Media Server",
+  "description": "Connector for Plex Media Server",
   "author": "Lars Weimar <eisbaeeer@gmail.com>",
   "contributors": [
     "Lars Weimar <eisbaeeer@gmail.com>"
@@ -10,7 +10,6 @@
   "license": "MIT",
   "keywords": [
     "ioBroker",
-    "plex webhook",
     "plex",
     "web",
     "home automation"
@@ -20,8 +19,7 @@
     "url": "https://github.com/Eisbaeeer/ioBroker.plexconnect"
   },
   "dependencies": {
-	"express": "https://github.com/expressjs/express/tarball/master/",
-  "multer": "https://github.com/expressjs/multer/tarball/master/"
+	"express": "https://github.com/expressjs/express/tarball/master/"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
@@ -39,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/Eisbaeeer/ioBroker.plexconnect/issues"
   },
-  "main": "piface.js",
+  "main": "plexconnect.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   }

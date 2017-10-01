@@ -1,6 +1,6 @@
 /**
  *
- *      ioBroker Plex Media Server Webhook Adapter
+ *      ioBroker Plex Media Server Connect Adapter
  *
  *      Copyright (c) 2016 Eisbaeeer@gmail.com
  *
