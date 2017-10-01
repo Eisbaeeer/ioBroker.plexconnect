@@ -10,7 +10,12 @@ For some functionality you need PlexPass.
 
 ### Settings in iobroker
 
+
 ## ChangeLog
+
+### 0.0.3 (2017-10-01)
+* (Eisbaeeer) 
+* added URL of thumbs
 
 ### 0.0.2 (2017-09-30)
 * (Eisbaeeer) 

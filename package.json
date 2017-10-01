@@ -1,6 +1,6 @@
 {
   "name": "iobroker.plexconnect",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Connector for Plex Media Server",
   "author": "Lars Weimar <eisbaeeer@gmail.com>",
   "contributors": [
