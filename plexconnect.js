@@ -54,6 +54,8 @@ app.post('/', upload.single('thumb'), function (req, res, next) {
 // Server
     adapter.setState (adapter.namespace + '.' + 'server.title', {val: payload.Server.title, ack: true});
     adapter.setState (adapter.namespace + '.' + 'server.uuid', {val: payload.Server.uuid, ack: true});
+    
+    res.sendStatus(200);
 
 });
 
