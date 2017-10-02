@@ -16,6 +16,7 @@ For some features you need PlexPass.
 ### 0.0.3 (2017-10-01)
 * (Eisbaeeer) 
 * added URL of thumbs
+* bugfix 200 OK
 
 ### 0.0.2 (2017-09-30)
 * (Eisbaeeer) 
