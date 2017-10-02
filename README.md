@@ -6,7 +6,7 @@ More functionality will follow
 
 ### ! Attention !
 
-For some functionality you need PlexPass.
+For some features you need PlexPass.
 
 ### Settings in iobroker
 
