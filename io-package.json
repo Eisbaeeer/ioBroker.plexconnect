@@ -15,7 +15,7 @@
         ],
         "license":                  "MIT",
         "readme":                   "https://github.com/eisbaeeer/ioBroker.plexconnect/blob/master/README.md",
-        "icon":                     "plex-logo.png",
+        "icon":                     "plexconnect.png",
         "type":                     "hardware",
         "extIcon":                  "https://raw.githubusercontent.com/eisbaeeer/ioBroker.plexconnect/master/admin/plexconnect.png"
     },
