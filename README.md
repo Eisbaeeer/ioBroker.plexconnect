@@ -41,4 +41,4 @@ For some features you need PlexPass.
 * (Eisbaeeer) 
 * initial version
 
-[License](https://github.com/Eisbaeeer/ioBroker.plexconnect/LICENSE)
+[License](https://github.com/Eisbaeeer/ioBroker.plexconnect/blob/master/LICENSE)
