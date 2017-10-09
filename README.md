@@ -2,16 +2,19 @@
 # ioBroker.plexconnect
 
 This adapter allows in first step to get Webhooks from Plex Media Server.
-More functionality will follow
+More functionality will follow.
+
+[More informations about Web-Hooks clilck here](https://support.plex.tv/hc/en-us/articles/115002267687-Webhooks)
 
 ### ! Attention !
 
 For some features you need PlexPass.
 
-### Settings in iobroker
-
-
 ## ChangeLog
+
+### 0.0.4 (2017-10-09)
+* (Eisbaeeer)
+* first release
 
 ### 0.0.3 (2017-10-01)
 * (Eisbaeeer) 
