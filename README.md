@@ -3,7 +3,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
-[![Travis-CI](https://travis-ci.org/Eisbaeeer/iobroker.plexconnect.svg?branch=master)](https://travis-ci.org/Eisbaeeer/iobroker.plexconnect)   
+[![Travis-CI](https://travis-ci.org/Eisbaeeer/ioBroker.plexconnect.svg?branch=master)](https://travis-ci.org/Eisbaeeer/ioBroker.plexconnect)   
 [![NPM](https://nodei.co/npm/iobroker.plexconnect.png?downloads=true)](https://nodei.co/npm/iobroker.plexconnect/)
 
 This adapter allows in first step to get Webhooks from Plex Media Server.
@@ -16,6 +16,13 @@ More functionality will follow.
 For some features you need PlexPass.
 
 ## ChangeLog
+
+### 0.0.5 (2017-10-09)
+* (Eisbaeeer)
+* rename repo
+* rename logo
+* fix travis
+* adding license
 
 ### 0.0.4 (2017-10-09)
 * (Eisbaeeer)
@@ -34,3 +41,4 @@ For some features you need PlexPass.
 * (Eisbaeeer) 
 * initial version
 
+[License](https://github.com/Eisbaeeer/ioBroker.plexconnect/LICENSE)

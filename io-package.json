@@ -3,7 +3,7 @@
         "name":                     "plexconnect",
         "title":                    "Plex Connect",
         "desc":                     "Plex connector",
-        "version":                  "0.0.4",
+        "version":                  "0.0.5",
         "mode":                     "daemon",
         "platform":                 "Javascript/Node.js",
         "loglevel":                 "info",
@@ -14,10 +14,10 @@
             "mdsv"
         ],
         "license":                  "MIT",
-        "readme":                   "https://github.com/eisbaeeer/iobroker.plexconnect/blob/master/README.md",
+        "readme":                   "https://github.com/eisbaeeer/ioBroker.plexconnect/blob/master/README.md",
         "icon":                     "plex-logo.png",
         "type":                     "hardware",
-        "extIcon":                  "https://raw.githubusercontent.com/eisbaeeer/iobroker.plexconnect/master/admin/plex-logo.png"
+        "extIcon":                  "https://raw.githubusercontent.com/eisbaeeer/ioBroker.plexconnect/master/admin/plexconnect.png"
     },
     "native": {
         "ipaddress": "127.0.0.1",
