@@ -1,6 +1,11 @@
 ![Logo](admin/plex-logo.png)
 # ioBroker.plexconnect
 
+[![NPM version](http://img.shields.io/npm/v/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
+[![Travis-CI](https://travis-ci.org/Eisbaeeer/ioBroker.plexconnect.svg?branch=master)](https://travis-ci.org/Eisbaeeer/ioBroker.plexconnect)   
+[![NPM](https://nodei.co/npm/iobroker.plexconnect.png?downloads=true)](https://nodei.co/npm/iobroker.plexconnect/)
+
 This adapter allows in first step to get Webhooks from Plex Media Server.
 More functionality will follow.
 
