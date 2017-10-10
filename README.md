@@ -17,6 +17,10 @@ For some features you need PlexPass.
 
 ## ChangeLog
 
+### 0.0.6 (2017-10-10)
+* (Eisbaeeer)
+* changed topic
+
 ### 0.0.5 (2017-10-09)
 * (Eisbaeeer)
 * rename repo
