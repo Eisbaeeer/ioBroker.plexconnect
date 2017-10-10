@@ -1,5 +1,5 @@
 {
-  "name": "iobroker.plexconnect",
+  "name": "ioBroker.plexconnect",
   "version": "0.0.5",
   "description": "Connector for Plex Media Server",
   "author": "Lars Weimar <eisbaeeer@gmail.com>",
