@@ -20,6 +20,7 @@ For some features you need PlexPass.
 ### 0.0.6 (2017-10-10)
 * (Eisbaeeer)
 * changed topic
+* fix travis error
 
 ### 0.0.5 (2017-10-09)
 * (Eisbaeeer)

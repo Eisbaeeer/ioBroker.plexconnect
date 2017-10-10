@@ -12,7 +12,7 @@ var utils =   require(__dirname + '/lib/utils'); // Get common adapter utils
 var adapter = utils.adapter('plexconnect');
 
 var express = require('express'),
-    request = require('request'),
+//    request = require('request'),
     multer  = require('multer');
 var app = express();
 var upload = multer({ dest: '/tmp/' });
@@ -67,7 +67,7 @@ adapter.on('ready', function () {
     var port = server.address().port;
     adapter.log.info('Server listening on port:' + port);
     adapter.log.info('PMS:' + adapter.config.host);
-    adapter.log.info('PMC:' + adapter.config.player);  
+//    adapter.log.info('PMC:' + adapter.config.player);  
    
 });
     main();
