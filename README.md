@@ -9,7 +9,7 @@
 This adapter allows in first step to get Webhooks from Plex Media Server.
 More functionality will follow.
 
-[More informations about Web-Hooks clilck here](https://support.plex.tv/hc/en-us/articles/115002267687-Webhooks)
+[More informations about Web-Hooks click here](https://support.plex.tv/hc/en-us/articles/115002267687-Webhooks)
 
 ### ! Attention !
 
