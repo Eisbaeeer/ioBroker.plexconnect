@@ -9,11 +9,11 @@
 This adapter allows in first step to get Webhooks from Plex Media Server.
 More functionality will follow.
 
-[More informations about Web-Hooks click here](https://support.plex.tv/hc/en-us/articles/115002267687-Webhooks)
-
 ### ! Attention !
 
-For some features you need PlexPass.
+* For some features you need PlexPass.
+* You must enable "Webhoks" in the network settings of plex-server to get messages!
+* [More informations about Web-Hooks click here](https://support.plex.tv/hc/en-us/articles/115002267687-Webhooks)
 
 ## ChangeLog
 
