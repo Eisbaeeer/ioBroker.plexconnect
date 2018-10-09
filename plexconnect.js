@@ -20,8 +20,7 @@ var upload = multer({ dest: '/tmp/' });
 
 app.post('/', upload.single('thumb'), function (req, res, next) {
     var payload = JSON.parse(req.body.payload);
-    adapter.log.info('getting payload');
-    adapter.log.info(payload.Server.title);
+    adapter.log.info('Getting payload from Server '+payload.Server.title+'...');
 
 // Account
     adapter.setState (adapter.namespace + '.' + 'account.id', {val: payload.Account.id, ack: true});
@@ -80,7 +79,7 @@ adapter.on('objectChange', function (id, obj) {
 
 adapter.on('stateChange', function (id, state) {
 //    adapter.log.info('stateChange ' + id + ' ' + JSON.stringify(state));
-    adapter.log.info('stateVal ' + state.val);
+    adapter.log.info('State for id '+id+' has changed to ' + state.val);
        
     // you can use the ack flag to detect if state is command(false) or status(true)
     if (state.ack) {
