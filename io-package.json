@@ -3,7 +3,7 @@
         "name":                     "plexconnect",
         "title":                    "Plex Connect",
         "desc":                     "Plex connector",
-        "version":                  "0.0.6",
+        "version":                  "0.0.7",
         "mode":                     "daemon",
         "platform":                 "Javascript/Node.js",
         "loglevel":                 "info",
@@ -36,11 +36,23 @@
             "native": {}
         },
         {
-            "_id":  "event.Name",
+            "_id":  "event.name",
             "type": "state",
             "common": {
                 "name":  "Event",
                 "desc":  "play, pause, resume, stop, scropple, rate",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "event.refreshed",
+            "type": "state",
+            "common": {
+                "name":  "refreshed",
+                "desc":  "Last refresh / update",
                 "type":  "string",
                 "read":  true,
                 "write": false
