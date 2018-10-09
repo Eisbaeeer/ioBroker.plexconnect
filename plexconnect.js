@@ -29,7 +29,8 @@ app.post('/', upload.single('thumb'), function (req, res, next) {
     adapter.setState (adapter.namespace + '.' + 'account.title', {val: payload.Account.title, ack: true});
     
 // Event
-    adapter.setState (adapter.namespace + '.' + 'event.Name', {val: payload.event, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'event.name', {val: payload.event, ack: true});
+    adapter.setState (adapter.namespace + '.' + 'event.refreshed', {val: Date.now(), ack: true});
 
 // Metadata 
     adapter.setState (adapter.namespace + '.' + 'metadata.addedAt', {val: payload.Metadata.addedAt, ack: true});
