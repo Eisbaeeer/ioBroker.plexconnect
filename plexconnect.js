@@ -16,9 +16,9 @@ const utils =    require(__dirname + '/lib/utils'); // Get common adapter utils
 // adapter will be restarted automatically every time as the configuration changed, e.g system.adapter.template.0
 const adapter = new utils.Adapter('plexconnect');
 
-var express = require('express'),
-    request = require('request'),
-    multer  = require('multer');
+var express = require('express');
+//    request = require('request'),
+var  multer  = require('multer');
 var app = express();
 var upload = multer({ dest: '/tmp/' });
 
