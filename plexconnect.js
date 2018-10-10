@@ -9,7 +9,7 @@
  */
 
 var utils =   require(__dirname + '/lib/utils'); // Get common adapter utils
-var adapter = utils.adapter('plexconnect');
+const adapter = new utils.adapter('plexconnect');
 
 var express = require('express'),
 //    request = require('request'),
