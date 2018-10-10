@@ -17,6 +17,10 @@ More functionality will follow.
 
 ## ChangeLog
 
+### 0.0.7 (2018-10-10)
+* (Zefau)
+* Added timestamp for last refresh 
+
 ### 0.0.6 (2017-10-10)
 * (Eisbaeeer)
 * changed topic
