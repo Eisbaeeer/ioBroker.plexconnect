@@ -8,11 +8,16 @@
  *
  */
 
-var utils =   require(__dirname + '/lib/utils'); // Get common adapter utils
-const adapter = new utils.adapter('plexconnect');
+// you have to require the utils module and call adapter function
+const utils =    require(__dirname + '/lib/utils'); // Get common adapter utils
+
+// you have to call the adapter function and pass a options object
+// name has to be set and has to be equal to adapters folder name and main file name excluding extension
+// adapter will be restarted automatically every time as the configuration changed, e.g system.adapter.template.0
+const adapter = new utils.Adapter('plexconnect');
 
 var express = require('express'),
-//    request = require('request'),
+    request = require('request'),
     multer  = require('multer');
 var app = express();
 var upload = multer({ dest: '/tmp/' });
