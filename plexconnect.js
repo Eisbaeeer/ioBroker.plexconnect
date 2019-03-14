@@ -65,7 +65,7 @@ app.post('/', upload.single('thumb'), function (req, res, next) {
 });
 
 adapter.on('ready', function () {
-    adapter.log.info('function ready');
+    adapter.log.debug('function ready');
   
     // starting express server
     var server = app.listen(adapter.config.port, function () {
@@ -79,12 +79,12 @@ adapter.on('ready', function () {
 });
 
 adapter.on('objectChange', function (id, obj) {
-    adapter.log.info('objectChange ' + id + ' ' + JSON.stringify(obj));
+    adapter.log.debug('objectChange ' + id + ' ' + JSON.stringify(obj));
 });
 
 adapter.on('stateChange', function (id, state) {
 //    adapter.log.info('stateChange ' + id + ' ' + JSON.stringify(state));
-    adapter.log.info('State for id '+id+' has changed to ' + state.val);
+    adapter.log.silly('State for id '+id+' has changed to ' + state.val);
        
     // you can use the ack flag to detect if state is command(false) or status(true)
     if (state.ack) {
@@ -95,6 +95,6 @@ adapter.on('stateChange', function (id, state) {
 });
 
 function main() {
-    adapter.log.info('function main');
+    adapter.log.debug('function main');
     adapter.subscribeStates('*');
 }
