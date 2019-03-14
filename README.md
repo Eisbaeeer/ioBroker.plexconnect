@@ -1,7 +1,7 @@
 ![Logo](admin/plexconnect.png)
 # ioBroker.plexconnect
 
-[![NPM version](http://img.shields.io/npm/v/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
+![Number of Installations](http://iobroker.live/badges/plexconnect-installed.svg) ![Number of Installations](http://iobroker.live/badges/plexconnect-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.plexconnect.svg)](https://www.npmjs.com/package/iobroker.plexconnect)
 [![Travis-CI](https://travis-ci.org/Eisbaeeer/ioBroker.plexconnect.svg?branch=master)](https://www.travis-ci.org/Eisbaeeer/ioBroker.plexconnect)   
 [![NPM](https://nodei.co/npm/iobroker.plexconnect.png?downloads=true)](https://nodei.co/npm/iobroker.plexconnect/)

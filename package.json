@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "express": "https://github.com/expressjs/express/tarball/master/",
-    "multer": "https://github.com/expressjs/multer/tarball/master/"
+    "multer": "https://github.com/expressjs/multer/tarball/master/",
+    "@iobroker/adapter-core": "^1.0.3"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
