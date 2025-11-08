@@ -13,7 +13,10 @@
             "Lars Weimar <Eisbaeeer@gmail.com>",
             "mdsv"
         ],
-        "license":                  "MIT",
+        "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+        },
         "readme":                   "https://github.com/eisbaeeer/iobroker.plexconnect/blob/master/README.md",
         "icon":                     "plexconnect.png",
         "type":                     "multimedia",
