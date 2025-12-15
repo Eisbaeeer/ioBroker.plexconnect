@@ -8,7 +8,6 @@
         "platform":                 "Javascript/Node.js",
         "loglevel":                 "info",
         "keywords":                 ["plex media server", "plex", "addon"],
-        "main":                     "plexconnect.js",
         "authors": [
             "Lars Weimar <Eisbaeeer@gmail.com>",
             "mdsv"
