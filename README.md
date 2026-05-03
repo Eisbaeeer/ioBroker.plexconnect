@@ -51,3 +51,5 @@ More functionality will follow.
 * initial version
 
 [License](https://github.com/Eisbaeeer/ioBroker.plexconnect/blob/master/LICENSE)
+
+[Older changelogs can be found there](CHANGELOG_OLD.md)
