@@ -17,6 +17,10 @@ More functionality will follow.
 
 ## ChangeLog
 
+
+### **WORK IN PROGRESS**
+- (ioBroker-Bot) Adapter requires js-controller >= 6.0.11 now.
+
 ### 0.0.7 (2018-10-10)
 * (Zefau)
 * Added timestamp for last refresh 
